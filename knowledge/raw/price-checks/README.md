@@ -2,6 +2,8 @@
 
 Store raw or near-raw evidence for price checks here when exact evidence matters.
 
+Use `observation-format.md` as the draft operating format for manual observations.
+
 Examples:
 
 - screenshots;

@@ -48,6 +48,26 @@ Do not treat this file as raw evidence. Use it as an index pointing to URLs, tim
 - Confidence: experimental
 - Notes: Seed evidence is useful for backlog and process design, but should not be reused as current price evidence without a fresh check.
 
+## 2026-05-22 - Keepa Public Product Research
+
+- Source type: notes
+- Related candidate: Keepa-Like Radar De Ofertas Para Mexico
+- Checked at: 2026-05-22 22:57:40 CST
+- Checked by: Codex web research
+- Store: Keepa / browser extension stores / GitHub
+- Product: Keepa Amazon Price Tracker
+- URL: `https://keepa.com/`; `https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo`; `https://addons.mozilla.org/en-US/firefox/addon/keepa/`; `https://github.com/keepacom/api_backend`; `https://keepaapi.readthedocs.io/`
+- Raw evidence location: not persisted as raw local capture; processed notes in `knowledge/processed/summaries/keepa-analysis-2026-05-22.md` and source URLs listed above.
+- Visible price: not applicable
+- Package size: not applicable
+- Availability: public pages accessible at research time
+- Membership requirement: not applicable
+- Shipping included: not applicable
+- Coupon/promotion assumptions: not applicable
+- Location assumptions: Mexico-first adaptation is inferred for this project; Keepa public pages specifically mention Amazon `.mx` support.
+- Confidence: verified
+- Notes: Use this entry for product-pattern evidence only. It does not prove Keepa internal architecture beyond public descriptions and API framework examples.
+
 ## 2026-05-22 - Manual Beer Price Run 001
 
 - Source type: price-check | notes
@@ -67,3 +87,103 @@ Do not treat this file as raw evidence. Use it as an index pointing to URLs, tim
 - Location assumptions: CDMX requested, but no postal code entered; browser defaults were not treated as CDMX evidence
 - Confidence: experimental
 - Notes: First manual validation run for the observation format. No screenshots or exports captured; evidence notes preserve checked pages, gaps, inferences, and comparability risks.
+
+## 2026-05-25 - Hot Sale 2026 Promociones Bancarias 001
+
+- Source type: notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-25T08:00:53-06:00
+- Checked by: codex-manual-browser
+- Store: Promodescuentos / multiple banks and payment methods
+- Product: Hot Sale 2026 bank and payment promotions
+- URL: `https://www.promodescuentos.com/ofertas/hot-sale-2026-guia-completa-de-ofertas-bancarias-1160717`
+- Raw evidence location: `knowledge/raw/promo-checks/run-2026-05-25-hot-sale-bancos-001/README.md`
+- Visible price: not applicable
+- Package size: not applicable
+- Availability: Article visible in Codex in-app browser; event end observed as 2026-06-02 23:59
+- Membership requirement: varies by bank/card/customer segment; see raw notes
+- Shipping included: not applicable
+- Coupon/promotion assumptions: Promodescuentos article treated as secondary evidence; official bank terms were not individually verified in this run
+- Location assumptions: Mexico; no personal account, card, or location data used
+- Confidence: experimental
+- Notes: Use this for promotion-analysis evidence only. Before recommending a purchase, verify the selected bank's official terms, registration deadline, eligible merchants, caps, exclusions, and stacking behavior.
+
+## 2026-05-25 - iPhone 17 Hot Sale Bank Offer Check 001
+
+- Source type: price-check | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-25T08:14:55-06:00
+- Checked by: codex-manual-browser
+- Store: El Palacio de Hierro; iShop Mixup; MacStore; Costco Mexico; Promodescuentos; BBVA; Banamex; American Express; Banorte secondary summaries
+- Product: iPhone 17 256 GB
+- URL: `https://www.elpalaciodehierro.com/apple-iphone-17-256-gb-salvia-45003893.html`; `https://www.ishopmixup.com/iphone-17/p`; `https://www.macstoreonline.com.mx/productos/iphone749`; `https://www.costco.com.mx/Electronicos/Apple/iPhone/Apple-iPhone-17-256GB-Azul-Neblina/p/696412`; `https://www.bbva.mx/hot-sale.html`; `https://www.banamex.com/hotsale/index.html`; `https://www.americanexpress.com/es-mx/beneficios/promociones/hot-sale.html`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-25-iphone17-hot-sale-001/README.md`
+- Visible price: $19,599.02 at El Palacio de Hierro; $19,999 at iShop/MacStore; $19,899 at Costco
+- Package size: iPhone 17 256 GB
+- Availability: Palacio and iShop pages visible; Palacio showed Disponible; Costco page visible; MacStore page visible but selected variant data was partially obscured in DOM
+- Membership requirement: Costco likely membership-gated; not checked
+- Shipping included: Palacio free over $399; iShop page mentions shipping rules; Costco includes shipping
+- Coupon/promotion assumptions: Walmart Mexico and Mercado Libre excluded; bank-promo calculations assume eligible merchant, valid registration/activation, and no order split
+- Location assumptions: Mexico; no postal code entered; no personal account or card data used
+- Confidence: experimental
+- Notes: Recommendation favored Banamex for phone-only purchase and Banorte for a $20,000+ basket. Official Banorte 2026 TyC still needs direct validation before purchase.
+
+## 2026-05-25 - Sonos Sub Mini Amazon Bank Promo Check 001
+
+- Source type: price-check | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-25T08:53:25-06:00
+- Checked by: codex-manual-browser
+- Store: Amazon Mexico
+- Product: Sonos Sub Mini, Subwoofer Inalambrico - Blanco
+- URL: `https://www.amazon.com.mx/Sonos-Subwoofer-Inal%C3%A1mbrico-Intensifica-Sonido/dp/B0BKNZRW52?ref_=ast_sto_dp&th=1`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-25-sonos-sub-mini-amazon-001/README.md`
+- Visible price: $7,198.00
+- Package size: one Sonos Sub Mini
+- Availability: visible as Disponible
+- Membership requirement: none observed
+- Shipping included: Amazon showed free delivery
+- Coupon/promotion assumptions: Amazon Hot Sale coupon codes from Promodescuentos treated as secondary evidence; calculations assume coupon accepted and bank bonus applies after registration
+- Location assumptions: Amazon page showed delivery to Ecatepec 55067; no location change performed
+- Confidence: experimental
+- Notes: Product was visibly sold/fulfilled by Amazon Mexico, which is important for Amazon bank-promo eligibility. Final price must be confirmed in checkout and bank TyC.
+
+## 2026-05-25 - iPhone 17 Best Bank Promo Refresh 001
+
+- Source type: price-check | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-25T09:32:58-06:00
+- Checked by: codex-manual-browser
+- Store: Promodescuentos; Amazon Mexico; El Palacio de Hierro; MacStore; Liverpool; Costco; Office Depot; Elektra
+- Product: iPhone 17 256 GB; iPhone 17 Pro Max 256 GB
+- URL: `https://www.promodescuentos.com/grupo/iphone-17`; `https://www.promodescuentos.com/search?q=iphone%2017%20pro%20max`; `https://www.elpalaciodehierro.com/apple-iphone-17-pro-max-256-gb-naranja-45003924.html`; `https://www.elpalaciodehierro.com/categorias/iphone-17/`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-25-iphone17-best-bank-refresh-001/README.md`
+- Visible price: iPhone 17 best active Promodescuentos visible $13,349 with Santander/Amazon; iPhone 17 Pro Max best visible $21,099 MacStore Banorte with title claiming $19,515 under activation TJF
+- Package size: 256 GB
+- Availability: Promodescuentos listings visible; store checkout availability not fully validated
+- Membership requirement: Costco likely requires membership; not validated
+- Shipping included: mixed; see individual store checkout before purchase
+- Coupon/promotion assumptions: Calculations assume coupon accepted, bank registration complete, eligible merchant/product, and no split charges
+- Location assumptions: Mexico; no checkout or account login performed
+- Confidence: experimental
+- Notes: Use as a current ranking snapshot only. User later provided Banorte terms clarifying that the main Banorte one-payment bonus excludes MSI, PayPal, and Mercado Pago; Banorte scenarios must use TDC Digital Banorte at one payment in participating merchants.
+
+## 2026-05-25 - Costco Sam's PayPal iPhone 17 Hot Sale Check 001
+
+- Source type: price-check | screenshot | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-25T10:30:00-06:00
+- Checked by: codex-manual-browser + user-provided checkout screenshots/terms
+- Store: Costco Mexico; Sam's Club Mexico; PayPal Mexico
+- Product: iPhone 17 256 GB; iPhone 17 Pro Max 256 GB
+- URL: `https://www.costco.com.mx/content/cat-tdc`; `https://www.paypal.com/mx/webapps/mpp/shop/daily-offers`; `https://www.sams.com.mx/ayuda/articulo/promociones-bancarias/0089f183dae243c0a090ef2a93d96ce7`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-25-costco-sams-iphone17-001/README.md`
+- Visible price: Costco user checkout showed iPhone 17 Pro Max basket subtotal $30,899, coupon `VS123` -$7,500, one-payment total $23,399; Sam's search showed iPhone 17 256 GB around $19,742.88-$20,457.96.
+- Package size: 256 GB
+- Availability: Costco checkout screenshot showed order flow; Sam's iPhone 17 results visible in manual search; iPhone 17 Pro Max not found in observed Sam's search.
+- Membership requirement: Costco and Sam's membership likely required; not independently validated in this run.
+- Shipping included: Costco/Sam's shipping details not normalized in this run.
+- Coupon/promotion assumptions: Costco `VS123` treated as direct Costco TDC Banamex coupon; PayPal/Banorte MSI treated as separate route from Banorte one-payment tier bonus; Sam's bank offers treated as MSI/exclusive-price evidence only.
+- Location assumptions: Mexico; no postal code or personal account data changed.
+- Confidence: experimental
+- Notes: Do not combine Banorte one-payment bonus with PayPal/MSI. Do not assume Costco TDC Banamex coupons stack with PayPal. Sam's evidence did not produce the best current iPhone recommendation.
