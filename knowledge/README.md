@@ -11,14 +11,17 @@ knowledge/
   README.md
   raw/
     price-checks/
+    promo-checks/
   processed/
     insights/
     summaries/
   projects/
     radar-de-ofertas/
       README.md
+      work-log.md
       reuse-backlog.md
       source-index.md
+      offer-watchlist.md
 ```
 
 ## Evidence Lifecycle
@@ -32,6 +35,7 @@ idea/process -> evidence -> insight -> experiment -> doc/template -> skill -> pl
 Rules:
 
 - Raw evidence belongs in `knowledge/raw/`.
+- Promotion and bank-route evidence also belongs in `knowledge/raw/`, usually under `promo-checks/` unless it is tied to a specific product price.
 - Normalized summaries and atomic insights belong in `knowledge/processed/`.
 - Project-specific memory belongs in `knowledge/projects/radar-de-ofertas/`.
 - Reusable process docs belong in `docs/` only after validation.
@@ -59,6 +63,14 @@ For price comparisons, prefer entries that include:
 - confidence label.
 
 If any field is missing, mark it explicitly instead of hiding the gap.
+
+## Current Memory Map
+
+- `knowledge/projects/radar-de-ofertas/README.md`: shortest project index and active decisions.
+- `knowledge/projects/radar-de-ofertas/work-log.md`: chronological summary of validated work sessions and outputs.
+- `knowledge/projects/radar-de-ofertas/source-index.md`: source registry for raw evidence and timestamps.
+- `knowledge/projects/radar-de-ofertas/reuse-backlog.md`: candidates before promotion to docs, skills, plugins, or automation.
+- `knowledge/projects/radar-de-ofertas/offer-watchlist.md`: products worth rechecking; not purchase recommendations.
 
 ## Promotion Rule
 

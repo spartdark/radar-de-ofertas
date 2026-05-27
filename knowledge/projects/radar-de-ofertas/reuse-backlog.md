@@ -89,5 +89,39 @@ idea/process -> evidence -> insight -> experiment -> doc/template -> skill -> pl
 - Validation needed: repetir con otro producto de alto ticket o validar esta misma corrida contra terminos oficiales completos de Banorte, Banamex, BBVA, Amex, PayPal y Costco.
 - Token budget impact: medio si se cargan todas las promociones; bajo si se indexan promociones como objetos y se cargan solo las rutas candidatas.
 - Decision: mantener como `knowledge`; no promover a skill/plugin/automation. Considerar `docs/runbooks/manual-bank-promo-comparison.md` tras una corrida adicional o validacion oficial.
-- Open questions: como modelar stacking incierto, como ponderar MSI vs descuento contado, como valorar riesgo de bonificacion diferida, si Sam's debe heredar exclusion de Walmart Mexico, y como evitar recomendaciones por padding artificial de carrito.
+- Open questions: como modelar stacking incierto, como ponderar MSI vs descuento contado, como valorar riesgo de bonificacion diferida, si Sam's debe heredar exclusion de Walmart Mexico, como evitar recomendaciones por padding artificial de carrito, y como comparar tiendas que cambian el precio base entre contado, banco directo y wallet/PayPal.
 - Risks: promociones volatiles, terminos incompletos en fuentes secundarias, caps mal interpretados, wallet/MSI excluido, cupones agotados, compras divididas, evidencia personalizada por usuario o membresia.
+
+## Watchlist Manual De Ofertas Visibles
+
+- Status: validating
+- Source: barrido Sam's + Costco del 2026-05-26 y `knowledge/projects/radar-de-ofertas/offer-watchlist.md`.
+- Current artifact: `knowledge/projects/radar-de-ofertas/offer-watchlist.md`; raw evidence under `knowledge/raw/price-checks/run-2026-05-26-sams-costco-ofertas-001/`; summary in `knowledge/processed/summaries/sams-costco-offer-sweep-2026-05-26.md`.
+- Proposed asset: knowledge
+- Reuse case: separar productos con senales visibles de descuento de recomendaciones reales de compra, priorizando que articulos merecen recheck o comparacion historica.
+- Expected users: comprador final, operador del radar, Codex research agent, futura app `radar-de-ofertas`.
+- Inputs: tienda, categoria, pagina fuente, timestamp, precio actual, precio previo o ahorro visible, disponibilidad, envio, membresia, review signal y notas de comparabilidad.
+- Outputs: watchlist segmentada en `strong_signal`, `candidate_to_track`, `watch_with_caution` y `not_a_deal_yet`; siguientes validaciones por producto.
+- Evidence needed: product pages exactas, historial o competidores same-SKU, costo de membresia/envio, checkout final si es alto ticket, y baseline confiable del precio anterior.
+- Validation needed: recheck de 5 a 10 productos del watchlist contra competidores o historial; medir cuantos `strong_signal` sobreviven como recomendaciones.
+- Token budget impact: bajo si se mantiene como tabla resumida y las observaciones completas quedan en raw CSV.
+- Decision: mantener como `knowledge`; no promover a doc/template hasta validar que la rubrica predice ofertas reales y no solo descuentos visibles.
+- Open questions: umbral por categoria, peso de reviews, regla de membresia para no socios, si exigir same-SKU antes de `strong_signal`, y como registrar precio historico.
+- Risks: descuentos inflados por MSRP, productos no comparables, baja calidad a pesar de descuento, stock limitado, precios por ubicacion o membresia, y confundir MSI con ahorro real.
+
+## Modelo De Rutas Y Promociones Bancarias
+
+- Status: idea
+- Source: corridas Hot Sale 2026 de iPhone, Sonos Sub Mini, Apple TV y Sam's Club bank routes.
+- Current artifact: `knowledge/processed/insights/hot-sale-iphone-bank-promos-manual-run-2026-05-25.md`; summaries and raw evidence under `knowledge/raw/promo-checks/` and `knowledge/raw/price-checks/run-2026-05-25-*`.
+- Proposed asset: knowledge
+- Reuse case: representar promociones bancarias como objetos comparables antes de calcular una ruta de compra.
+- Expected users: operador del radar, Codex research agent, futura app `radar-de-ofertas`.
+- Inputs: banco, tarjeta, tipo de tarjeta, canal, tienda participante, minimo de compra, porcentaje o monto, tope, registro, MSI, forma de pago, exclusiones, acumulacion, fechas, evidencia y confianza.
+- Outputs: objeto de promocion normalizado, reglas de elegibilidad, calculo de beneficio estimado, bloqueos de validacion y advertencias de stacking.
+- Evidence needed: terminos oficiales de bancos, evidencia de checkout cuando aplique, confirmacion de seller/fulfillment, y screenshots o notas de carrito final para compras de alto valor.
+- Validation needed: normalizar al menos 5 promociones reales y reproducir manualmente una recomendacion ya trabajada sin mezclar rutas incompatibles.
+- Token budget impact: medio si se cargan terminos largos; bajo si se guardan objetos compactos con links a fuente.
+- Decision: mantener como `knowledge`; puede alimentar un runbook, pero no skill/plugin/automation sin validacion adicional.
+- Open questions: valor financiero de MSI vs contado, manejo de bonificaciones diferidas, rangos cuando el stacking es incierto, y tratamiento de rewards tipo Cashi frente a cashback.
+- Risks: terminos incompletos, beneficios no acumulables, exclusiones de wallets, compras partidas, topes diarios vs campana, registro tardio y evidencia personalizada.

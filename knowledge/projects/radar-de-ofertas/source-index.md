@@ -9,7 +9,7 @@ Do not treat this file as raw evidence. Use it as an index pointing to URLs, tim
 ```md
 ## <YYYY-MM-DD> - <Short Run Name>
 
-- Source type: price-check | screenshot | export | notes | command-output | other
+- Source type: price-check | promo-check | screenshot | export | notes | command-output | other
 - Related candidate:
 - Checked at:
 - Checked by:
@@ -187,3 +187,83 @@ Do not treat this file as raw evidence. Use it as an index pointing to URLs, tim
 - Location assumptions: Mexico; no postal code or personal account data changed.
 - Confidence: experimental
 - Notes: Do not combine Banorte one-payment bonus with PayPal/MSI. Do not assume Costco TDC Banamex coupons stack with PayPal. Sam's evidence did not produce the best current iPhone recommendation.
+
+## 2026-05-25 - Apple TV Amazon Hot Sale Bank Route Check 001
+
+- Source type: price-check | notes
+- Related candidate: Comparador Manual De Promociones Bancarias Hot Sale
+- Checked at: 2026-05-25T11:15:00-06:00
+- Checked by: codex-manual-browser
+- Store: Amazon Mexico
+- Product: Apple TV 4K Wi-Fi + Ethernet 128 GB, tercera generacion
+- URL: `https://www.amazon.com.mx/Apple-Wi%E2%80%91Fi-Almacenamiento-Tercera-generaci%C3%B3n/dp/B0BJN3WNR2`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-25-apple-tv-amazon-001/README.md`
+- Visible price: $3,699.00
+- Package size: one Apple TV 4K 128 GB
+- Availability: visible as "Solo hay 2 disponible(s)"
+- Membership requirement: none observed
+- Shipping included: Amazon page showed free delivery to the browser's current delivery location
+- Coupon/promotion assumptions: BBVA 15 MSI visible on product page; bank cashback routes treated as not useful for standalone purchase because product price is below captured Hot Sale minimum thresholds.
+- Location assumptions: Browser showed delivery to Ecatepec 55067; no location change performed.
+- Confidence: experimental
+- Notes: Use as evidence for a low-ticket threshold lesson: below-minimum products should prefer simple MSI or cash payment unless the user already has planned basket items to cross a promotion threshold.
+
+## 2026-05-26 - Sam's Club Bank Routes Hot Sale Check 001
+
+- Source type: promo-check | notes
+- Related candidate: Comparador Manual De Promociones Bancarias Hot Sale
+- Checked at: 2026-05-26T00:00:00-06:00
+- Checked by: codex-web-research
+- Store: Sam's Club Mexico
+- Product: Sam's Club Hot Sale purchase routes
+- URL: `https://www.sams.com.mx/content/meses-sin-intereses/promociones-bancarias/230005_1410042`; `https://www.bbva.mx/hot-sale.html`; `https://www.banamex.com/hotsale/index.html`; `https://www.hsbc.com.mx/hot-sale/`; `https://www.americanexpress.com/es-mx/beneficios/promociones/hot-sale.samclub.html`; `https://promociones.invextarjetas.com.mx/guia-de-uso-invex-sams/`; `https://cashi.com.mx/samsclub`
+- Raw evidence location: `knowledge/raw/promo-checks/run-2026-05-26-sams-club-bank-routes-001/README.md`
+- Visible price: not applicable
+- Package size: not applicable
+- Availability: pages visible via web research
+- Membership requirement: Sam's Club membership required for purchases; Sam's Club INVEX guide also notes membership is required.
+- Shipping included: not normalized in this run.
+- Coupon/promotion assumptions: BBVA, Banamex, HSBC and Amex routes depend on checkout/product eligibility and bank terms. Sam's Club INVEX rewards are Cashi wallet value, not generic cash.
+- Location assumptions: Mexico; no account login performed.
+- Confidence: experimental
+- Notes: Strongest route depends on basket size: small/everyday Sam's Club INVEX/Cashi; online $5,000-$9,999 BBVA; online $10,000+ Banamex; online $13,500+ HSBC if eligible; physical-store MSI Amex from $3,500.
+
+## 2026-05-26 - Sam's + Costco Offer Sweep 001
+
+- Source type: price-check | notes
+- Related candidate: Comparador Manual De Precios De Bebidas En Mexico / general manual price comparison workflow
+- Checked at: 2026-05-26T11:04:19-06:00
+- Checked by: codex-manual-browser
+- Store: Sam's Club Mexico; Costco Mexico
+- Product: Linea blanca, appliances, beverage, electronics, furniture, personal/home products with explicit visible savings
+- URL: `https://www.sams.com.mx/content/promociones-especiales/1030057`; `https://www.costco.com.mx/`
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-26-sams-costco-ofertas-001/`
+- Visible price: mixed; see `observations.csv`
+- Package size: mixed; see `observations.csv`
+- Availability: mixed; mostly visible add/available signals, no checkout validation
+- Membership requirement: Costco and Sam's membership likely required; not independently validated in checkout
+- Shipping included: Costco often showed `Incluye envio`; Sam's showed Envio estandar or Club Pickup; see row-level notes
+- Coupon/promotion assumptions: bank promos, MSI, and checkout coupons excluded from deal scoring
+- Location assumptions: Mexico; no postal code entered or changed
+- Confidence: experimental
+- Notes: First sweep focused on visible discount quality signals for products worth tracking. Not enough evidence to make final purchase recommendations without cross-store or price-history validation.
+
+## 2026-05-27 - Sam's BBVA vs PayPal Price-Base Check 001
+
+- Source type: promo-check | notes
+- Related candidate: Comparador Manual De Promociones Bancarias Hot Sale
+- Checked at: 2026-05-27T10:46:00-06:00
+- Checked by: codex-web-research + user-provided domain observation
+- Store: Sam's Club Mexico; BBVA Mexico; PayPal Mexico
+- Product: Sam's Club Hot Sale purchase routes where Sam's may expose contado vs bank/MSI pricing
+- URL: `https://www.sams.com.mx/content/hot-sale/90001`; `https://www.sams.com.mx/content/meses-sin-intereses/promociones-bancarias/230005_1410042`; `https://www.bbva.mx/content/dam/public-web/mexico/documents/tycs/Terminos-y-Condiciones-HOT-SALE-2026.pdf`
+- Raw evidence location: `knowledge/raw/promo-checks/run-2026-05-27-sams-bbva-paypal-price-base-001/README.md`
+- Visible price: not captured for a specific SKU in this follow-up
+- Package size: not applicable
+- Availability: not checked for a specific SKU
+- Membership requirement: Sam's Club membership likely required; exact checkout route not validated in this follow-up
+- Shipping included: not normalized
+- Coupon/promotion assumptions: PayPal + BBVA should only be modeled as eligible if PayPal checkout confirms BBVA credit card at eligible MSI. BBVA direct should use the final Sam's BBVA/MSI checkout total, not the cash-like headline price.
+- Location assumptions: Mexico; no account login, postal code change or personal card data used
+- Confidence: experimental
+- Notes: Main reusable learning is the three-route comparison formula: contado checkout total vs BBVA direct MSI total minus expected bonus vs PayPal checkout total minus expected bonus. Needs SKU-level checkout screenshots before any final recommendation.
