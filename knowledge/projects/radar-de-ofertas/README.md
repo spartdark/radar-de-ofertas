@@ -43,6 +43,7 @@ idea/process -> evidence -> insight -> experiment -> doc/template -> skill -> pl
 | Manual price observation | `docs/experiments/manual-price-runbook-001.md`; `knowledge/raw/price-checks/observation-format.md` | draft experiment |
 | Beer price run | `knowledge/raw/price-checks/run-2026-05-22-cervezas-001/` | experimental evidence |
 | Hot Sale bank comparison | `knowledge/processed/insights/hot-sale-iphone-bank-promos-manual-run-2026-05-25.md` | strong knowledge signal, not promoted |
+| Banorte Hot Sale official sources | `knowledge/processed/summaries/banorte-hot-sale-official-2026-05-27.md`; `knowledge/raw/promo-checks/run-2026-05-27-banorte-hot-sale-official-001/README.md` | official source grounding, card terms still need Tarjeta Favorita evidence |
 | Apple TV low-ticket route | `knowledge/processed/summaries/apple-tv-amazon-threshold-2026-05-25.md` | threshold insight |
 | Sam's Club bank routes | `knowledge/processed/summaries/sams-club-bank-routes-2026-05-26.md` | route map, needs checkout validation |
 | Sam's + Costco offer sweep | `offer-watchlist.md`; `knowledge/processed/summaries/sams-costco-offer-sweep-2026-05-26.md` | tracking candidates |

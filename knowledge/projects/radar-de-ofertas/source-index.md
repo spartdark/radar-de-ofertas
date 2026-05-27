@@ -28,6 +28,86 @@ Do not treat this file as raw evidence. Use it as an index pointing to URLs, tim
 - Notes:
 ```
 
+## 2026-05-27 - Banorte Hot Sale Official Promo Check 001
+
+- Source type: promo-check | notes
+- Related candidate: Comparador Manual De Promociones Bancarias Hot Sale / Modelo De Rutas Y Promociones Bancarias
+- Checked at: 2026-05-27T13:21:49-06:00
+- Checked by: codex-web-research
+- Store: Banorte
+- Product: Banorte Hot Sale 2026 public official promotions
+- URL: `https://www.banorte.com/Personal/Promociones-Hot-Sale.html`; `https://www.banorte.com/Personal/Tarjeta-Favorita.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Con-Banorte-sales-con-ventaja-Pagare.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Apartados-y-Ahorro.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/CDN.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Credito-Hipotecario.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Autoestrene.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Seguros.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Cuenta-PyME.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/TPV.html`; `https://www.banorte.com/Personal/Promociones-Hot-Sale/Disfruta-los-beneficios-de-un-Credito-PyME-en-linea.html`
+- Raw evidence location: `knowledge/raw/promo-checks/run-2026-05-27-banorte-hot-sale-official-001/README.md`
+- Visible price: not applicable
+- Package size: not applicable
+- Availability: official public Banorte Hot Sale pages visible via web research; no login or app access used
+- Membership requirement: not applicable; some offers require Banorte account, card, credit approval, business account, or product eligibility
+- Shipping included: not applicable
+- Coupon/promotion assumptions: No ecommerce checkout discount assumed. Public card pages route to Tarjeta Favorita; exact card cashback terms remain unverified in this run.
+- Location assumptions: Mexico; no personal account, card, or location data used
+- Confidence: verified
+- Notes: Use as official-source grounding for Banorte Hot Sale 2026 taxonomy and public product-offer terms. Do not use alone to calculate Banorte card cashback for a purchase route.
+
+## 2026-05-27 - Amazon Mexico Bank Routes Hot Sale Check 001
+
+- Source type: promo-check | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-27T13:16:17-06:00
+- Checked by: codex-web-research
+- Store: Amazon Mexico
+- Product: General Amazon Mexico Hot Sale basket, no single SKU checked
+- URL: `https://www.aboutamazon.mx/noticias/tienda/amazon-mexico-llega-a-hot-sale-2026-con-miles-de-ofertas-entrega-el-mismo-dia-y-opciones-de-pago-para-todos`; `https://www.scotiabank.com.mx/promociones/hotsale`; `https://www.hsbc.com.mx/hot-sale/`; `https://www.bbva.mx/hot-sale.html`; `https://www.amazon.com.mx/b?node=120274022011`; `https://www.banamex.com/hotsale/index.html?categoria=Amazon`; `https://www.santander.com.mx/hot-sale/index.html`; `https://www.santander.com.mx/hot-sale/assets-2026/pdf/TyC-Hot-Sale-Amazon.pdf`; `https://www.amazon.com.mx/b?node=121720336011`
+- Raw evidence location: `knowledge/raw/promo-checks/run-2026-05-27-amazon-mx-bank-routes-001/README.md`
+- Visible price: not applicable
+- Package size: not applicable
+- Availability: official Hot Sale promo pages visible in web research; Amazon product checkout not performed
+- Membership requirement: not applicable
+- Shipping included: not applicable
+- Coupon/promotion assumptions: Recommendations assume coupon accepted at checkout, registration completed before purchase, eligible card/product/payment term, and cashback/bonus budget not exhausted.
+- Location assumptions: Mexico; no postal code or account login used
+- Confidence: experimental
+- Notes: Current snapshot favored Scotiabank for strongest immediate Amazon coupon and HSBC Premier/ONE for large eligible Amazon Mexico MSI baskets. User-provided Amazon Banorte URL later verified Banorte Amazon coupon `BANORTEHS26` and 15% one-payment TDC Digital bonus terms. Amazon BBVA URL verified `BBVAHS26` coupon plus automatic 16% bonus at BBVA 6/9 or 12/15 MSI thresholds. Verify checkout before purchase.
+
+## 2026-05-27 - Amazon Whisky Cart Bank Route Check 001
+
+- Source type: price-check | screenshot | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-27T13:25:18-06:00
+- Checked by: user screenshot + codex recommendation
+- Store: Amazon Mexico
+- Product: Johnnie Walker Black Label 1 L x1; Johnnie Walker Red Label 1 L x10
+- URL: user-provided Amazon cart screenshot, no product URL captured
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-27-amazon-whisky-cart-bank-route-001/README.md`; screenshot at `/Users/vladimir.saldivar/Desktop/Screenshot 2026-05-27 at 13.24.10.png`
+- Visible price: $3,871.80 MXN subtotal for 11 products
+- Package size: 1 L bottles
+- Availability: visible as available
+- Membership requirement: none observed
+- Shipping included: visible free delivery on screenshot items
+- Coupon/promotion assumptions: Banorte excluded by user. Recommendation assumes checkout confirms coupon/card/category eligibility; alcohol category exclusions not fully validated.
+- Location assumptions: Amazon screenshot shows delivery to Ciudad de... 06240; no location change performed
+- Confidence: experimental
+- Notes: At this subtotal, delayed cashback/bonification routes from BBVA, Banamex, HSBC, AMEX and Scotiabank mostly do not meet minimums. Coupon routes are more relevant unless the user adds planned eligible items to cross BBVA $5,000.
+
+## 2026-05-27 - Amazon BBVA 5000 Cart Route Check 001
+
+- Source type: price-check | screenshot | notes
+- Related candidate: Promotions and bank-offer comparison workflow
+- Checked at: 2026-05-27T13:31:43-06:00
+- Checked by: user screenshot + codex recommendation
+- Store: Amazon Mexico
+- Product: Heineken / Dos Equis Lager 12 x 355 ml x5; Gran Malo Jamaica 750 ml x3; Johnnie Walker Red Label 1 L x10
+- URL: user-provided Amazon cart screenshot, no product URL captured
+- Raw evidence location: `knowledge/raw/price-checks/run-2026-05-27-amazon-bbva-5000-cart-001/README.md`; screenshot at `/Users/vladimir.saldivar/Desktop/Screenshot 2026-05-27 at 13.31.17.png`
+- Visible price: $5,002.80 MXN subtotal for 18 products
+- Package size: mixed beverage/alcohol items
+- Availability: visible as available
+- Membership requirement: none observed
+- Shipping included: visible free delivery on screenshot items
+- Coupon/promotion assumptions: Recommendation assumes BBVA Amazon Hot Sale terms previously captured: $5,000 minimum for 6/9 MSI and $7,500 minimum for 12/15 MSI. Final eligibility must be confirmed in checkout.
+- Location assumptions: Amazon screenshot shows delivery to Ciudad de... 06240; no location change performed
+- Confidence: experimental
+- Notes: Best BBVA plazo for this cart is 6 or 9 MSI. The cart is too low for 12/15 MSI bonus threshold and too close to $5,000 to tolerate split charges or item removals. After checking Amazon's BBVA page, a stronger route is to lift the eligible basket to at least $5,500 before applying `BBVAHS26`, so the $500 coupon does not likely drop the charged amount below the $5,000 bonus threshold.
+
 ## 2026-05-22 - Chat Price Comparison Seed
 
 - Source type: notes
